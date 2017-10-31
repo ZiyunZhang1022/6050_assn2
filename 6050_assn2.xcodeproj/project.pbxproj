@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5A2E0A661FA24B1800304328 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E0A651FA24B1800304328 /* main.cpp */; };
+		5A2E0A6D1FA24CEA00304328 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2E0A6C1FA24CEA00304328 /* OpenGL.framework */; };
+		5A2E0A6F1FA24CF600304328 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2E0A6E1FA24CF600304328 /* GLUT.framework */; };
+		5A3CE8471FA3EE71005F4AC7 /* z_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CE8451FA3EE71005F4AC7 /* z_buffer.cpp */; };
+		5A3CE84A1FA3F2E2005F4AC7 /* Obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CE8481FA3F2E2005F4AC7 /* Obj.cpp */; };
+		5AE482711FA69F6C00527161 /* transfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4826F1FA69F6C00527161 /* transfer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,15 @@
 /* Begin PBXFileReference section */
 		5A2E0A621FA24B1800304328 /* 6050_assn2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6050_assn2; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2E0A651FA24B1800304328 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5A2E0A6C1FA24CEA00304328 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		5A2E0A6E1FA24CF600304328 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		5A3CE8451FA3EE71005F4AC7 /* z_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = z_buffer.cpp; sourceTree = "<group>"; };
+		5A3CE8461FA3EE71005F4AC7 /* z_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = z_buffer.h; sourceTree = "<group>"; };
+		5A3CE8481FA3F2E2005F4AC7 /* Obj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Obj.cpp; sourceTree = "<group>"; };
+		5A3CE8491FA3F2E2005F4AC7 /* Obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj.h; sourceTree = "<group>"; };
+		5A3CE84B1FA3F366005F4AC7 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		5AE4826F1FA69F6C00527161 /* transfer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transfer.cpp; sourceTree = "<group>"; };
+		5AE482701FA69F6C00527161 /* transfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transfer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2E0A6F1FA24CF600304328 /* GLUT.framework in Frameworks */,
+				5A2E0A6D1FA24CEA00304328 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,8 @@
 		5A2E0A591FA24B1800304328 = {
 			isa = PBXGroup;
 			children = (
+				5A2E0A6E1FA24CF600304328 /* GLUT.framework */,
+				5A2E0A6C1FA24CEA00304328 /* OpenGL.framework */,
 				5A2E0A641FA24B1800304328 /* 6050_assn2 */,
 				5A2E0A631FA24B1800304328 /* Products */,
 			);
@@ -58,6 +76,13 @@
 			isa = PBXGroup;
 			children = (
 				5A2E0A651FA24B1800304328 /* main.cpp */,
+				5A3CE84B1FA3F366005F4AC7 /* main.h */,
+				5A3CE8451FA3EE71005F4AC7 /* z_buffer.cpp */,
+				5A3CE8461FA3EE71005F4AC7 /* z_buffer.h */,
+				5A3CE8481FA3F2E2005F4AC7 /* Obj.cpp */,
+				5A3CE8491FA3F2E2005F4AC7 /* Obj.h */,
+				5AE4826F1FA69F6C00527161 /* transfer.cpp */,
+				5AE482701FA69F6C00527161 /* transfer.h */,
 			);
 			path = 6050_assn2;
 			sourceTree = "<group>";
@@ -118,6 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3CE84A1FA3F2E2005F4AC7 /* Obj.cpp in Sources */,
+				5A3CE8471FA3EE71005F4AC7 /* z_buffer.cpp in Sources */,
+				5AE482711FA69F6C00527161 /* transfer.cpp in Sources */,
 				5A2E0A661FA24B1800304328 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +267,7 @@
 				5A2E0A6B1FA24B1800304328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
